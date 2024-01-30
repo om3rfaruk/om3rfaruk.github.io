@@ -1,1 +1,39 @@
-hi word
+hi word 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlük Kelimeler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #wordList {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Günlük İngilizce Kelimeler</h1>
+    <ul id="wordList">
+        <!-- Kelimeler buraya eklenecek -->
+    </ul>
+
+    <script>
+        // Günlük kelimelerinizi ekleyin
+        var words = ["Word1", "Word2", "Word3", "Word4", "Word5"];
+
+        // Liste üzerinde dönerek her kelimeyi ekleyin
+        var wordList = document.getElementById("wordList");
+        words.forEach(function(word) {
+            var listItem = document.createElement("li");
+            listItem.appendChild(document.createTextNode(word));
+            wordList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
